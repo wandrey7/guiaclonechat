@@ -14,6 +14,13 @@ Ele ocorre por conta de mensagens que foram apagadas desse canal, pois o clone c
 
 Esse erro ocorre pois o canal que você esta tentando clonar possui a restrição de salvamento de arquivos, para resolver é simples basta executar o arquivo `clonechat_protect_run.py` ou `exec_clonechat_protect.bat` (caso esteja no Windows) e refazer o processo de colocar os id dos canais de origem e destino.
 
+## CHAT ID INVALID
+
+![404 CHAT_CHAT_ID_INVALID image](/chaid.jpg)
+
+Esse erro indica que o ID do canal está inválido, Revise o id e caso tenha dúvidas em relação a id de canais, consulte [Guia chat id](/pages/perguntas_frequentes#como-pegar-o-chat-id-de-um-grupo-canal)
+
+
 ## MEDIA_CAPTION_TOO_LONG
 
 ![MEDIA_CAPTION_TOO_LONG image](/mctl_error.png)
