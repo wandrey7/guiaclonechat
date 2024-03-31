@@ -37,7 +37,7 @@ Abra o terminal do Linux e vá até a pasta do clonechat.
 Execute o comando:
 
 ```Bash
-pip -r install requirements.txt
+pip install -r requirements.txt --upgrade
 ```
 
 ### Android
