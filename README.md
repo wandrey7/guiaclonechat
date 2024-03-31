@@ -1,5 +1,3 @@
-# Guia completo do clone chat
-
 ## Colaboração
 
 Nossa guia é bem-vinda para colaborar na manutenção e atualização das guias. Se você deseja contribuir, siga os seguintes passos:
@@ -9,6 +7,6 @@ Nossa guia é bem-vinda para colaborar na manutenção e atualização das guias
 3. Envie um pull request para este repositório principal.
 4. Explique quais mudanças e adições você fez e por qual motivo aquela mudança ou adição seria interessante.
 
-## Vitepress
+⚠️ Este guia foi desenvolvido independentemente do projeto CloneChat.
 
 A guia atualmente roda no [Vitepress](https://vitepress.dev/)
