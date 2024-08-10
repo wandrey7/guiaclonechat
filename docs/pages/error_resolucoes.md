@@ -53,6 +53,10 @@ Erro se dá por conta dos bots do Telegram não ter acesso ao histórico antigo 
 
 ## [WinError 267] O nome de diretório é invalido
 
+::: info
+Na versão 113 esse erro foi corrigido, agora chats contendo caracteres especiais não geram erros no sistema de arquivos
+:::
+
 ![Win error 267 image](/win_error.png)
 
 Erro que ocorre na clonagem de canal com caracteres especiais no nome.
