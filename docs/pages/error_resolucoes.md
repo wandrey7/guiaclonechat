@@ -1,6 +1,8 @@
 # Erros e resoluções
 
-Aqui trataremos os principais erros do clonechat.
+Antes de verificar algum erro, certifique-se de estar com o clonechat com a versão mais recente.
+
+Títulos marcados com :x: serão removidos da guia em breve
 
 ## Blank id
 
@@ -51,7 +53,31 @@ Esse erro se dá por conta da conexão do seu dispositivo com a o pyrogram ou po
 
 Erro se dá por conta dos bots do Telegram não ter acesso ao histórico antigo do grupo/canal,o bot só vai ter acesso às mensagens que foram enviadas depois que ele entrou no grupo/canal.
 
-## [WinError 267] O nome de diretório é invalido
+## Sintaxe do nome do arquivo
+
+![Win error sintaxe image](/sintaxe_error.png)
+
+Delete os arquivos .session e tente novamente. Esse erro é causado por conta da sessão do Telegram.
+
+## Tgcrypto extension Error
+
+![image](/tgcrypto_error.jpg)
+
+A mensagem de erro que você está vendo indica que é necessário ter o Microsoft Visual C++ 14.0 ou uma versão mais recente instalada para compilar a extensão `tgcrypto`. Para resolver esse problema, siga estas etapas:
+
+Instale as Ferramentas de Compilação do Microsoft Visual C++:
+
+Você pode baixar as ferramentas de compilação necessárias no site da Microsoft Visual Studio. [Clique aqui](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+
+Faça o download e instale as Ferramentas de Compilação do Visual C++. Exemplo na imagem abaixo:
+
+**Atualize ou Instale o Microsoft Visual Studio:**
+
+![image](/vstgcrypto_error.jpg)
+
+Alternativamente, você pode instalar ou atualizar o Microsoft Visual Studio, que inclui as ferramentas de compilação necessárias. Certifique-se de selecionar a opção `Desenvolvimento para área de trabalho com C++" durante a instalação`.
+
+## :x: [WinError 267] O nome de diretório é invalido
 
 ::: info
 Na versão 113 esse erro foi corrigido, agora chats contendo caracteres especiais não geram erros no sistema de arquivos
@@ -87,29 +113,31 @@ Caso queira o arquivo clonechat_protect.py já editado e funcionado basta baixar
 
 [Clique aqui para baixar](https://github.com/wandrey7/guiaclonechat/blob/main/docs/public/clonechat_protect.py)
 
-## Sintaxe do nome do arquivo
+## :x: JSONDecodeError
 
-![Win error sintaxe image](/sintaxe_error.png)
+::: info
+Antes da v116 o clonechat_protect_up gerava erro "json.decoder.JSONDecodeError" ao executar a função show_history_overview. Causado por o histórico estar em processo de download. Agora emite mensagem de espera pelo download do histórico. Atualize seu clonechat para a versão mais recente para corrigir o erro
+:::
 
-Delete os arquivos .session e tente novamente. Esse erro é causado por conta da sessão do Telegram.
+![image](/json_decode_error.jpg)
 
-## Tgcrypto extension Error
+## :x: KeyError file_name
 
-![image](/tgcrypto_error.jpg)
+::: info
+Antes da v117 o clonechat gerava erro "KeyError file_name" ao executar clonechat_protect_dw. Atualize seu clonechat para a versão mais recente para corrigir o erro
+:::
 
-A mensagem de erro que você está vendo indica que é necessário ter o Microsoft Visual C++ 14.0 ou uma versão mais recente instalada para compilar a extensão `tgcrypto`. Para resolver esse problema, siga estas etapas:
+![image](key_erro_file_name.jpg)
 
-Instale as Ferramentas de Compilação do Microsoft Visual C++:
 
-Você pode baixar as ferramentas de compilação necessárias no site da Microsoft Visual Studio. [Clique aqui](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+## :x: NotADirectoryError
 
-Faça o download e instale as Ferramentas de Compilação do Visual C++. Exemplo na imagem abaixo:
+::: info
+Antes da v115 o clonechat gerava erro "NotADirectoryError" ao executar DownloadAll, ocorrendo em chats com titulo contendo caracteres especiais. Atualize seu clonechat para a versão mais recente para corrigir o erro
+:::
 
-**Atualize ou Instale o Microsoft Visual Studio:**
+![image](NotADirectoryError.jpg)
 
-![image](/vstgcrypto_error.jpg)
-
-Alternativamente, você pode instalar ou atualizar o Microsoft Visual Studio, que inclui as ferramentas de compilação necessárias. Certifique-se de selecionar a opção `Desenvolvimento para área de trabalho com C++" durante a instalação`.
 
 ## Erros de api
 
