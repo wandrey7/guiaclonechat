@@ -9,4 +9,10 @@ Nossa guia é bem-vinda para colaborar na manutenção e atualização das guias
 
 ⚠️ Este guia foi desenvolvido independentemente do projeto CloneChat.
 
+## Próximas modificações
+
+- [ ] Atualizar modo de usar
+- [ ] Atualizar configurando o ambiente
+- [ ] Adicionar tutorial p/ bot
+
 A guia atualmente roda no [Vitepress](https://vitepress.dev/)

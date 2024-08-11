@@ -127,7 +127,7 @@ Antes da v116 o clonechat_protect_up gerava erro "json.decoder.JSONDecodeError" 
 Antes da v117 o clonechat gerava erro "KeyError file_name" ao executar clonechat_protect_dw. Atualize seu clonechat para a versão mais recente para corrigir o erro
 :::
 
-![image](key_erro_file_name.jpg)
+![image](/key_erro_file_name.jpg)
 
 
 ## :x: NotADirectoryError
@@ -136,7 +136,7 @@ Antes da v117 o clonechat gerava erro "KeyError file_name" ao executar clonechat
 Antes da v115 o clonechat gerava erro "NotADirectoryError" ao executar DownloadAll, ocorrendo em chats com titulo contendo caracteres especiais. Atualize seu clonechat para a versão mais recente para corrigir o erro
 :::
 
-![image](NotADirectoryError.jpg)
+![image](/NotADirectoryError.jpg)
 
 
 ## Erros de api
