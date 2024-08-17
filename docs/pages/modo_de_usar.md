@@ -1,63 +1,37 @@
-# Fazer o Login
-
-Na primeira vez que você for usar o clonechat será preciso fazer uma conexão com o Telegram, você só vai precisar fazer isso quando instalar ele da primeira vez ou quando apagar os arquivos `user.session` e `user_up.session`
-
-Após clicar no arquivo de inicialização do clonechat vai aparecer a seguinte mensagem no terminal
-
-> "Enter phone number or bot token:"
-
-::: tip 💡 Dica
-Você está em dúvida sobre as diferenças de modo user e modo bot? [Clique aqui](/pages/perguntas_frequentes) para saber mais.
-:::
-
-Caso for usar o modo bot vá para X, caso for usar o modo user continue aqui!
-
-Digite o seu número de telefone com DDI +55 para números Brasileiros, após isso digite enter.
-
-> Exemplo: +5573982512841
-
-Na mensagem perguntando se o número está correto digite y. Após isso será enviado um código para o seu Telegram, digite ele no terminal
-
-::: warning ⚠ Atenção
-Se você tiver Autenticação de dois fatores (2Fa) ativado, será solicitado sua senha!
-:::
-
 ## Modo de usar
 
-::: danger ⚠ Atenção
-Certifique-se de estar logado com suas credenciais, caso não esteja [clique aqui](/pages/configurando_ambiente.html#configurando-o-clonechat)
-:::
-
-1- Digite o chat_id do canal/grupo de origem. E confirme com [ENTER]
-
-2- Digite o chat_id do canal/grupo de destino (o canal onde deseja salvar as mensagens). E confirme com [ENTER]
-
-3- Escolha o que deseja clonar
-
 ::: tip 💡 Dica
-Caso não saiba como pegar o id de origem/ destino [clique aqui](/pages/perguntas_frequentes.html#como-pegar-o-chat-id-de-um-grupo-canal)
+Não sabe como pegar o id de origem/ destino? [clique aqui](/pages/perguntas_frequentes.html)
 :::
 
-- Após confirmar o id de origem e o id de destino aparecerá um menu como esse abaixo para filtragem.
+Se for a primeira vez que você está usando o clonechat, é preciso instalar um ambiente virtual. Execute o arquivo `install.bat`
 
-```Bash
-0 - Clona todos os arquivos
-1 - Fotos
-2 - Apenas texto
-3 - Documentos (pdf, zip, rar, ...)
-4 - Stickers/figurinhas
-5 - GIF's
-6 - Arquivos de áudio (música)
-7 - Mensagens de voz
-8 - Vídeos
-9 - Enquetes
-```
+### Clonando canais com encaminhamento ativo
 
-- Se quiser clonar todos os arquivos digite 0.
-- Você pode selecionar múltiplas opções, basta separar elas com vírgulas. Ex.: 1,3 para clonar apenas fotos e documentos.
+Para clonar as postagens de um canal/grupo para outro canal/grupo. Use o `exec_clonechat.bat`
 
-4- Após selecionar os filtros, escolha se deseja iniciar ou continuar uma clonagem.
+Digite o id do chat, link de convite ou username do grupo/canal.
 
-- Digite 1 para iniciar uma clonagem do zero.
-- Digite 2 para continar uma clonagem já existente.
-- Confime com [Enter]
+Selecione os tipos de arquivos a serem clonados, separe eles por vírgulas.`Ex.: 1, 2, 3`
+
+Digite `1` caso queira continuar a clonagem anterior ou `2` para uma nova clonagem
+
+Agora basta aguardar a clonagem ser feita!
+
+### Clonando canais com encaminhamento desativado
+
+Para clonar as postagens de um canal/grupo com conteúdo protegido, basta executar os arquivos `exec_clonechat_protect_dw.bat` e `exec_clonechat_protect_up.bat`.
+
+Execute ambos os arquivos para iniciar o processo de clonagem. Em alguns casos, pode haver uma mensagem "Hold on...", que indica que o sistema está baixando os metadados. Geralmente isso demora 1s por cada 100 mensagens.
+
+Às vezes, o canal de origem pode ter dados demais para serem guardados. O clonechat_protect ajuda a resolver isso, o limite padrão é 5.000 MiB. Se isso for atingido, o clonechat_protect parará de baixar e aguardará mais espaço.
+
+Se quiser mudar esse limite , é só editar o arquivo "user/config.ini" e ajustar o valor da chave "cache_folder_max_size_mb" para o que você preferir. O valor deve ser escrito em megabytes.
+
+### Baixando arquivo de canais com tópicos
+
+Para baixar todos os arquivos de um "tópico" em um grupo com essa função. `Use exec_downloadtopic.bat` e cole um link de mensagem do tópico a ser baixado.
+
+### Baixando arquivos de canais
+
+Para baixar todos os arquivos de um canal (fotos, vídeos, áudios, documentos, etc) e salva em ordem de postagem. Use `exec_downloadall.bat`. Siga os mesmos passos do tópico #[Clonando canais com encaminhamento ativo]

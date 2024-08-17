@@ -38,7 +38,7 @@ Não, o clonechat não clona mensagens apagadas!
 
 ## O clonechat clona grupos com tópicos?
 
-Não, nativamente o clonechat não clona grupos com tópicos. Mas ele tem o código aberto que possibilita que seja modificado para tal necessidade.
+Não, nativamente o clonechat não clona grupos com tópicos. Mas ele pode baixar os arquivo desse grupo com tópico!
 
 ## Versão protect em branco
 
