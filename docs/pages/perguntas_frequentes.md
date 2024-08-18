@@ -2,7 +2,7 @@
 
 ## O que é clonechat?
 
-O clonechat é um programa feito em Python que realiza clonagem de canais/grupos No Telegram. Perfeito para backup's.
+O clonechat é um programa feito em Python que realiza clonagem ou download de canais/grupos No Telegram. Perfeito para backup's.
 
 ## Funciona em canais com encaminhamento desativado?
 
@@ -43,3 +43,11 @@ Não, nativamente o clonechat não clona grupos com tópicos. Mas ele pode baixa
 ## Versão protect em branco
 
 Normal, A versão protect do clonechat faz um scan no grupo/canal todo pra procurar as mensagens disponível
+
+## Após fazer o download de arquivos de um canal, eu consigo enviar para o Telegram de forma automatizada?
+
+Sim, use o [ZipSender](https://github.com/apenasrr/zipsender) ou [Zimatise](https://github.com/apenasrr/zimatise) para fazer o upload desses arquivos,
+
+Escolha ZipSender se quiser compactar em .zip e enviar para um canal/grupo do Telegram.
+
+Escolha Zimatise caso queira que esses arquivos possa ser assitido em formato streaming. **apenas videos, demais arquivos vai ser compactado em .zip**
