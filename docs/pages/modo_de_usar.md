@@ -37,5 +37,5 @@ Para baixar todos os arquivos de um "tópico" em um grupo com essa função. `Us
 Para baixar todos os arquivos de um canal (fotos, vídeos, áudios, documentos, etc) e salva em ordem de postagem. Use `exec_downloadall.bat`. Siga os mesmos passos do tópico #[Clonando canais com encaminhamento ativo]
 
 ::: info 💡 Info
-Deseja enviar esses arquivo baixados para um canal/grupo do Telegram? [clique aqui](perguntas_frequentes.md#após-fazer-o-download-de-arquivos-de-um-canal)
+Deseja enviar esses arquivo baixados para um canal/grupo do Telegram? [clique aqui](perguntas_frequentes.md#apos-fazer-o-download-de-arquivos-de-um-canal-eu-consigo-enviar-para-o-telegram-de-forma-automatizada)
 :::

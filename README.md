@@ -11,7 +11,7 @@ Nossa guia é bem-vinda para colaborar na manutenção e atualização das guias
 
 ## Próximas modificações
 
-- [ ] Atualizar modo de usar (90%)
+- [ x ] Atualizar modo de usar (100%)
 - [ x ] Atualizar configurando o ambiente
 - [ ] Adicionar tutorial p/ bot
 
