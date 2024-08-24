@@ -22,18 +22,11 @@ Esse erro ocorre pois o canal que você esta tentando clonar possui a restriçã
 
 Esse erro indica que o ID do canal está inválido, Revise o id e caso tenha dúvidas em relação a id de canais, consulte [Guia chat id](/pages/perguntas_frequentes#como-pegar-o-chat-id-de-um-grupo-canal)
 
-
 ## MEDIA_CAPTION_TOO_LONG
 
 ![MEDIA_CAPTION_TOO_LONG image](/mctl_error.png)
 
 Ele ocorre por conta que o Telegram possui diferentes limites para o plano free e o plano pago (premium). Para resolver esse erro basta excluir o `clonechat.py` e instalar essa versão que "pula" os arquivos que tiverem descrição maior.
-
-[Clique aqui para baixar](https://github.com/wandrey7/guiaclonechat/blob/main/docs/public/clonechat.py)
-
-::: danger ⚠ Atenção
-Caso opte por usar a versão modificada os arquivos que for "pulado" não será clonado. Caso queira clonar esses arquivos, terá que adquerir o Telegram Premium!
-:::
 
 ## ModuleNotFoundError
 
@@ -85,34 +78,6 @@ Na versão 113 esse erro foi corrigido, agora chats contendo caracteres especiai
 
 ![Win error 267 image](/win_error.png)
 
-Erro que ocorre na clonagem de canal com caracteres especiais no nome.
-
-> Ex:. Á
-
-A solução se aplica ao `Clonechat_protect` mas pode ser usada a mesma lógica para os demais códigos.
-
-Edite o arquivo `clonechat_protect.py`em `clonechat\protect_content\clonechat_protect.py` e colocar na `linha número 360`, esse trecho.
-
-```python
-chat_origin_title = re.sub(r":", "", chat_origin_title)
-```
-
-Em `r":"` pode-se colocar caracteres indesejados, como no exemplo: `r".\*!,'|"#;:?%"`, em meus testes só consegui sucesso com ":".
-
-Os caracteres indesejados serão substituídos por nada, caso queira substituir por underscore ou espaço em branco, basta alterar o conteúdo: `re.sub(r":", "underscore ou espaço aqui...", chat_origin_title)`
-
-::: danger ⚠ Atenção
-É preciso importar a biblioteca re acrescentando "import re" no começo do arquivo!
-:::
-
-<h3 align="center">Resumindo em uma foto</h3>
-
-![image](/err_img_267w.png)
-
-Caso queira o arquivo clonechat_protect.py já editado e funcionado basta baixar abaixo:
-
-[Clique aqui para baixar](https://github.com/wandrey7/guiaclonechat/blob/main/docs/public/clonechat_protect.py)
-
 ## :x: JSONDecodeError
 
 ::: info
@@ -129,7 +94,6 @@ Antes da v117 o clonechat gerava erro "KeyError file_name" ao executar clonechat
 
 ![image](/key_erro_file_name.jpg)
 
-
 ## :x: NotADirectoryError
 
 ::: info
@@ -137,7 +101,6 @@ Antes da v115 o clonechat gerava erro "NotADirectoryError" ao executar DownloadA
 :::
 
 ![image](/NotADirectoryError.jpg)
-
 
 ## Erros de api
 
