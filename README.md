@@ -11,8 +11,6 @@ Nossa guia é bem-vinda para colaborar na manutenção e atualização das guias
 
 ## Próximas modificações
 
-- [ x ] Atualizar modo de usar (100%)
-- [ x ] Atualizar configurando o ambiente
 - [ ] Adicionar tutorial p/ bot
 
 A guia atualmente roda no [Vitepress](https://vitepress.dev/)

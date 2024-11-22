@@ -47,7 +47,7 @@ Existe opções como Termux etc. Fique a vontade para usar outros, mas nesse tut
 
 ### Download direto
 
-1- Abra o [repositório do clonechat](https://github.com/apenasrr/clonechat)
+1- Abra o [repositório do clonechat](https://github.com/wandrey7/clonechat)
 
 2- Clique em `code` e vá para `Download ZIP`
 
@@ -60,7 +60,7 @@ Existe opções como Termux etc. Fique a vontade para usar outros, mas nesse tut
 Caso tenha o git instalado, no terminal digite:
 
 ```Bash
-git clone https://github.com/apenasrr/clonechat.git
+git clone https://github.com/wandrey7/clonechat.git
 ```
 
 ## Atualizando as dependências

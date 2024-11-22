@@ -46,7 +46,7 @@ Normal, A versão protect do clonechat faz um scan no grupo/canal todo pra procu
 
 ## Após fazer o download de arquivos de um canal, eu consigo enviar para o Telegram de forma automatizada?
 
-Sim, use o [ZipSender](https://github.com/apenasrr/zipsender) ou [Zimatise](https://github.com/apenasrr/zimatise) para fazer o upload desses arquivos,
+Sim, use o [ZipSender](https://github.com/apenasrr/zipsender) ou [Zimatise](https://github.com/apenasrr/zimatise) para fazer o upload desses arquivos. [Link's off]
 
 Escolha ZipSender se quiser compactar em .zip e enviar para um canal/grupo do Telegram.
 
