@@ -17,8 +17,8 @@ features:
     title: ⭐Contribua no Github
     link: https://github.com/wandrey7/guiaclonechat
   - icon:
-      dark: /telegram.png
-      light: /telegram.png
+      dark: /telegram_logo.png
+      light: /telegram_logo.png
     title: Grupo de Suporte
     link: https://t.me/uploadergrupo
 ---
